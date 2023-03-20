@@ -1,0 +1,8 @@
+@startuml
+class Game
+{
++StartGame
++EndGame
++Player
+}
+@enduml
