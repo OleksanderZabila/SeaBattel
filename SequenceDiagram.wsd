@@ -1,3 +1,6 @@
-@startumuml
-    
+@startuml
+controller -> Board
+ Board ->Cell
+ Cell -> Player
+ Cell -> AI
 @enduml
