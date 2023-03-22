@@ -1,8 +1,36 @@
 @startuml
-class Game
+class controller
 {
-+StartGame
-+EndGame
-+Player
+ -Player_pow
+ -AI_pow
+ -get_board
+ -audit ship
 }
+class Board
+{
+-print_borad
+-set_board
+-set ship
++get_board()
+}
+class Cell
+{
++Pow_y()
++pow_z()
+}
+class Player
+{
+-get_pow_player
++get_pow_player()
+}
+class AI
+{
+-get_pow_ai
++get_pow_ai()
+}
+Board --* controller
+Cell --* Board
+Player -> Cell
+AI -> Cell
+
 @enduml
